@@ -9,7 +9,10 @@
 require(dplyr)
 
 # Download all data files
-# Don't save folder on drive as folder is very big
+# Note: Assignment specifies the code should work as long as the data set is 
+# downloaded in working directory. This code will work when data set is 
+# downloaded and even when it is not. The data set is saved temporarily then 
+# deleted. This avoids having to push large data files to Github.
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 tempdir <- tempdir()
 temp <- tempfile()
